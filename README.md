@@ -1,2 +1,3 @@
-# Job_Aggretator
-A python script to retrieve Software jobs in Canada from Indeed!
+# Hacker News Content
+
+Using the API from https://github.com/HackerNews/API
