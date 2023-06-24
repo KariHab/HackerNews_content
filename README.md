@@ -3,6 +3,7 @@
 Using the API from https://github.com/HackerNews/API
 
 
+![HackerNews_content](https://github.com/KariHab/HackerNews_content/assets/121245611/137cd309-e6b8-4bbd-9eb6-d5d69a0d3bae)
 
 
 This is a work in progress
