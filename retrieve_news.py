@@ -1,4 +1,4 @@
-# A simple job aggregator from  Hacker News with the use of it's API
+# A simple content aggregator from  Hacker News with the use of it's API
 # Karima H - June 2023
 
 
