@@ -1,3 +1,7 @@
+# A simple job aggregator from  Hacker News with the use of it's API
+# Karima H - June 2023
+
+
 import requests
 import time
 import pyfiglet as pf
