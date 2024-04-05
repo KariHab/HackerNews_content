@@ -12,7 +12,8 @@ def callback(url):
 
 
 window = Tk()
-window.configure(background='black', width=250, height=300)
+# window.geometry("500x600")
+window.configure(background='black')
 window.title("Hacker News Content")
 url = 'https://hacker-news.firebaseio.com/v0/beststories.json'
 result = requests.get(url)
@@ -34,12 +35,11 @@ for new_id in news_ids[:8]:
     news.append(new_info)
 
 for index, new_info in enumerate(news):
-    Label(window, text="Title: " + new_info['title'], foreground="white", background="black").grid(row=index, sticky="w")
+    Label(window, text="Title: " + new_info['title'], foreground="white", background="black").grid(row=index, column=0, sticky="w")
+    Label(window, text="Author: " + new_info['author'], foreground="white", background="black").grid(row=index,column=1, sticky="w")
+    Label(window, text="Article score: " +str(new_info['article_score']), foreground="white", background="black").grid(row=index,column=2,sticky="w")
+    Button(window, text="Open the url", command=lambda url=new_info['url']: callback(url)).grid(row=index, column=3,sticky="e")
 
-    Label(window, text="Author: " + new_info['author'], foreground="white", background="black").grid(row=index, sticky="w")
-    # Label(window, text="Link: " + new_info['url'], foreground="white", background="black").grid(sticky="e")
-    Button(window, text="Open the url", command=lambda url=new_info['url']: callback(url)).grid(row=index,column=2, sticky="e")
-
-
-Button(window, text="close", command=window.quit).grid()
+#
+# Button(window, text="close", command=window.quit).grid()
 window.mainloop()
