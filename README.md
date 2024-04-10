@@ -6,7 +6,6 @@ Using the API from https://github.com/HackerNews/API
 
 # Updates:
 - GUI added with tkinter to make it easier to read the articles
-- Standalone app (.exe) to run it without having Python 
 --------------------------------
 
 # What it does
