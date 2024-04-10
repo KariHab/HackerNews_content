@@ -6,9 +6,11 @@ Using the API from https://github.com/HackerNews/API
 
 # Updates:
 - GUI added with tkinter to make it easier to read the articles
+- Standalone app (.exe) to run it without having Python 
 --------------------------------
 
 # What it does
 * Retrieve the top 8 best stories
 * Give you the specifications of each article
 * Give you the URL if you want to read it on the website directly!
+
